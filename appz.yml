@@ -4,7 +4,7 @@ app:
     notify: svengathattil@ecloudcontrol.com
     
 build:
-    version: 13.X
+    version: 13.Y
     env: DEV
     build_file: none
     output_files: output/*.zip
@@ -20,8 +20,7 @@ deploy:
     
 volumes:
   - claim: postgres-master-data
-    class: openebs-replicated
-    matchLabels: false
+    class: microk8s-hostpath
     mount: /appz/data
     name: data
     size: 5Gi
