@@ -20,7 +20,8 @@ deploy:
     
 volumes:
   - claim: postgres-master-data
-    class: microk8s-hostpath
+    class: openebs-replicated
+    matchLabels: false
     mount: /appz/data
     name: data
     size: 5Gi
