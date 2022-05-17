@@ -43,7 +43,7 @@ properties:
       vault: PHP_PASSWORD
     PGPASSWORD: 
       vault: PGPASSWORD
-    revision : 80
+    revision : 81
 
     #WebDav Setup
     PUSH_BACKUP_WEBDAV: False
